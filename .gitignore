@@ -14,6 +14,10 @@ target/
 *.iml
 *.ipr
 
+### H2 database files ###
+db/
+db_scripts/h2-console.*
+
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -38,3 +42,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+logs
+logs/app.log

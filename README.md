@@ -1,39 +1,28 @@
-# Java Interview Project Overview
+# Grid API with Spring Boot and H2 Database
 
-## Purpose
+Dependencies:
+Java 21 and Maven 3.9.11 or higher
 
-The `java-interview` project is designed to assess a candidate's proficiency in Java and Spring Boot development. It provides a practical coding environment where candidates can demonstrate their skills in building, testing, and maintaining Java applications using industry-standard tools and frameworks.
+```sh
+git config --global http.sslVerify false;
+git clone https://github.com/damonew/java_api;
+```
 
-## What the Project Provides
+To start the application using Maven, run:
+```sh
+mvn spring-boot:run
+```
+```sh
+mvn clean test
+```
 
-- **Spring Boot Application Skeleton**: A ready-to-use structure for building RESTful APIs or web applications.
-- **Maven Build System**: Standardized dependency management and build lifecycle.
-- **Sample Domain Model**: Example entities and repositories to work with.
-- **Unit and Integration Test Setup**: Pre-configured testing environment using JUnit and Mockito.
-- **API Endpoints**: Example controllers for implementing business logic.
-- **Documentation and Instructions**: Guidance for setup, running, and extending the project.
+The application will start on the default port (usually 8080).
 
-## What the Project Measures
+### 4️⃣ H2 Console Access
+To view or query the database, use the H2 console at [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
 
-- **Java Fundamentals**: Understanding of core Java concepts (OOP, collections, exceptions, streams).
-- **Spring Boot Proficiency**: Ability to use Spring Boot for dependency injection, REST API development, and configuration.
-- **Code Quality**: Writing clean, maintainable, and well-documented code.
-- **Testing Skills**: Implementing unit and integration tests, using mocking frameworks.
-- **Problem Solving**: Applying logical thinking to solve real-world scenarios.
-- **Maven Usage**: Managing dependencies and build processes.
-- **API Design**: Creating RESTful endpoints and handling HTTP requests/responses.
-- **Error Handling**: Implementing robust error and exception management.
-- **Best Practices**: Following industry standards for Java and Spring development.
+### H2 Console Example
 
-## Candidate Instructions
+Below is a screenshot of the H2 console for reference:
 
-1. **Clone the repository** and set up the project using Maven.
-2. **Implement the required features** as described in the assignment.
-3. **Write unit and integration tests** to verify your implementation.
-4. **Document your code** and decisions where appropriate.
-5. **Submit your solution** as instructed.
-
----
-
-This project is intended to simulate a real-world development task and evaluate a candidate's readiness for professional Java development roles.
-
+![H2 Console Example](src/main/resources/h2-console-example.png)
