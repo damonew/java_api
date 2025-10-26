@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ActiveProfiles("test")
 @SpringBootTest(classes = Application.class)
 public class ApplicationTest {
+
     @Autowired
     private ApplicationContext applicationContext;
 

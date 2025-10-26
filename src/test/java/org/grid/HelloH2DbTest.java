@@ -12,6 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 @ActiveProfiles("test")
 public class HelloH2DbTest {
+
     @Autowired
     private JdbcTemplate jdbcTemplate;
 

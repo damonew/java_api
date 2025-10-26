@@ -18,6 +18,11 @@ mvn clean test
 
 The application will start on the default port (usually 8080).
 
+### SQL Scripts Directory
+All database SQL scripts are located in:
+
+    src/main/resources/sql
+
 ### 4️⃣ H2 Console Access
 To view or query the database, use the H2 console at [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
 

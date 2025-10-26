@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS grid_user.meters (
 CREATE TABLE IF NOT EXISTS grid_user.outages (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     affected_asset_type VARCHAR(30) NOT NULL, -- e.g., PowerPlant, TransmissionLine, Substation
-    affected_asset_id BIGINT NOT NULL,
+    affected_asset_id BIGINT NOT NULL, -- foreign key in application logic (e.g., power plant, transmission line, or substation)
     timestamp TIMESTAMP NOT NULL,
     epoch BIGINT NOT NULL,
     end_time TIMESTAMP,
